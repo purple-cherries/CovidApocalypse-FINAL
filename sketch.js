@@ -506,10 +506,35 @@ if(lives === 0){
     cars();
 
 if(Background1.x<-400){
-  gameState=""
+  gameState="Finish"
 }
 
-  } 
+  }
+ 
+ if(gameState === "Finish"{
+    Background.visible = false;
+    Background1.visible = false;
+    PCLvl1.visible=false;
+    NextButton.visible = false
+    PlayButton.visible = false;
+    NextLevel1.visible = false
+    NextButton2.visible = false
+    NextButton3.visible = false
+    PCLvl21.visible=false;
+    PCLvl22.visible=false;
+    PCLvl21.visible=false;
+    PCLvl23.visible=false
+    container.visible = false;
+    check1.visible = false
+    check2.visible = false
+    check3.visible = false
+    PCLvl3.visible = false
+    
+    textSize(50)
+  fill("darkblue")
+  textAlign(CENTER)
+  text("Congratulations!",displayWidth/2,displayHeight/2)
+    }
 
   if(gameState === "over"){
     Background.visible = false;
